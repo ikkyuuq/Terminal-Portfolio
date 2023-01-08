@@ -6,7 +6,7 @@ import Terminal from "./Terminal";
 import { CSSTransition } from 'react-transition-group';
 
 function App() {
-  const [isTerminalVisible, setTerminalVisible] = useState(false);
+  const [isTerminalVisible, setTerminalVisible] = useState(true);
 
   function toggleTerminalVisibility() {
     console.log("Toggle terminal visibility!");

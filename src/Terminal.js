@@ -120,7 +120,7 @@ export default function Terminal(){
                                                 <li>Frontend developer</li>
                                                 <li>Application developer</li>
                                                 <h3>Education : </h3>
-                                                <li>Bachelor of Engineer in Computer Engineer <a href='https://www.src.ku.ac.th/' target='_blank'>| Kasetsart University Sriracha campus</a></li>
+                                                <li>Bachelor of Engineer in Computer Engineer <a href='https://www.src.ku.ac.th/' target='_blank' rel="noreferrer">| Kasetsart University Sriracha campus</a></li>
                                                 <div className='tech'>
                                                     <h3>Tech Stack :</h3>
                                                         <li>React JS</li>
@@ -142,7 +142,7 @@ export default function Terminal(){
                                         <br></br>
                                       </div>
                                     );
-                                  }
+                                  } break;
                             case 'resume':
                                 return <div key={index}>
                                         {commandCalled}
@@ -159,7 +159,7 @@ export default function Terminal(){
                                     {commandCalled}
                                     <div className='my-info'>
                                         <li>IoT Fingerprint to unlock</li>
-                                        <li>Interactive website portfolio <a href='https://kittipong-portfolio.netlify.app/' target="_blank">[Click here to go]</a></li>
+                                        <li>Interactive website portfolio <a href='https://kittipong-portfolio.netlify.app/' target="_blank" rel="noreferrer">[Click here to go]</a></li>
                                         <br></br>
                                         <p>And more in github...</p>
                                         <br></br>
@@ -169,8 +169,8 @@ export default function Terminal(){
                                 return <div key={index}>
                                     {commandCalled}
                                     <div className='my-info'>
-                                        <li>Facebook: <a href='https://www.facebook.com/ikkyuu.prasompong.33/' target='_blank'>Ikkyuu Prasompong</a></li>
-                                        <li>Instagram: <a href='https://www.instagram.com/ikkyuu.q/' target='_blank'>ikkyuu.q</a></li>
+                                        <li>Facebook: <a href='https://www.facebook.com/ikkyuu.prasompong.33/' target='_blank' rel="noreferrer">Ikkyuu Prasompong</a></li>
+                                        <li>Instagram: <a href='https://www.instagram.com/ikkyuu.q/' target='_blank' rel="noreferrer">ikkyuu.q</a></li>
                                         <li>Email: <a>kittipongprasompong@gmail.com</a></li>
                                         <li>Phone: <a>(+66) 098-106-8486</a></li>
                                     </div>

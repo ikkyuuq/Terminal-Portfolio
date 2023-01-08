@@ -1,0 +1,155 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Maven Pro', sans-serif;
+}
+
+.nav-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    user-select: none;
+}
+
+.flex{
+    display: flex;
+}
+
+.bg-white{
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.w-full{
+    width: 100%;
+    height: 30px;
+}
+
+.ld-30px{
+    padding-left: 30px;
+}
+.rd-30px{
+    padding-right: 30px;
+}
+
+.items-center{
+    align-items: center;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.left-bar img{
+    width: 20px;
+}
+
+h3.terminal-toggle{
+    cursor: pointer;
+    margin-left: 30px;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+}
+
+.terminal{
+    background-color: rgba(17, 17, 17, 0.7);
+    width: 60%;
+    height: 60vh;
+    border-radius: 10px;
+    padding: 30px;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    user-select: none;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    line-height: 30px;
+}
+
+.terminal h3{
+    font-weight: 400;
+}
+
+.terminal::-webkit-scrollbar {
+    width: 0.5em;
+    background-color: rgba(17, 17, 17, 0.7);
+  }
+  .terminal::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+  }
+.terminal input{
+    width: 100%;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    outline-style: none;
+    color: lawngreen;
+    font-size: large;
+    font-weight: bold;
+    font-weight: 500;
+}
+input::selection {
+    color: white;
+    background: crimson;
+  }
+
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.commands-list{
+    width: 100%;
+}
+
+.item{
+    width: 100%;
+    height: auto;
+}
+.list{
+    width: 40%;
+    height: auto;
+    color: #34a2ff;
+}
+.des {
+    width: 60%;
+    height: auto;
+    color:lawngreen;
+}
+
+.user{
+    color: crimson;
+}
+h3.user{
+    font-weight: 500;
+}
+.user-called {
+    color: lawngreen;
+}
+
+.command-called{
+    display: flex;
+}
+.command-called h3{
+    font-weight: 500;
+}
+
+.my-info{
+    display: flex;
+    flex-direction: column;
+    color: lawngreen;
+}
+.my-info a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.no-command{
+    color: whitesmoke;
+    background-color: crimson;
+}

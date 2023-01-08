@@ -57,10 +57,6 @@ export default function Terminal(){
           }
         });
       }
-      window.onload = function() {
-        document.getElementById("input").focus();
-      }
-   
     return (
         <div className="wrapper center">
             <div className="terminal">

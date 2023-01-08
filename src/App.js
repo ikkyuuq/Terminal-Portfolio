@@ -3,17 +3,26 @@ import "./App.css";
 import { useState } from "react";
 import Navbar from "./Navbar";
 import Terminal from "./Terminal";
+import { CSSTransition } from 'react-transition-group';
 
 function App() {
-  const [isTerminalVisible, SetVisiblity] = useState(false);
+  const [isTerminalVisible, setTerminalVisible] = useState(false);
 
-  function toggleVisiblity() {
-    SetVisiblity(!isTerminalVisible);
+  function toggleTerminalVisibility() {
+    console.log("Toggle terminal visibility!");
+    setTerminalVisible(!isTerminalVisible);
   }
   return (
     <div className="App">
-      <Navbar toggleVisiblity={toggleVisiblity}/>
-      {isTerminalVisible && <Terminal/>}
+      <Navbar toggleTerminalVisibility={toggleTerminalVisibility}/>
+      <CSSTransition
+          in={isTerminalVisible}
+          timeout={300}
+          classNames="terminal"
+          unmountOnExit
+        >
+          <Terminal />
+        </CSSTransition>
     </div>
   );
 }

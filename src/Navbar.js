@@ -12,10 +12,10 @@ export default function Navbar(props){
     }, []);
 
     return(
-        <nav className="nav-fixed flex bg-white w-full ld-30px rf-30px items-center justify-between">
+        <nav className="nav-fixed flex bg-white w-full ld-30px rd-30px items-center justify-between">
             <div className="left-bar flex items-center">
                 <img alt='logo' src="/mac-logo.png"></img>
-                <h3 className="terminal-toggle" onClick={props.toggleVisiblity}>Terminal</h3>
+                <h3 className="terminal-toggle" onClick={props.toggleTerminalVisibility}>Terminal</h3>
             </div>
             <div className="right-bar flex items-center">
                 <h3>{time}</h3>

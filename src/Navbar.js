@@ -21,5 +21,6 @@ export default function Navbar(props){
                 <h3>{time}</h3>
             </div>
         </nav>
+        
     )
 }

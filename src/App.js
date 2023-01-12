@@ -4,6 +4,7 @@ import { useState } from "react";
 import Navbar from "./Navbar";
 import Terminal from "./Terminal";
 import { CSSTransition } from 'react-transition-group';
+import  ReactDOMServer  from 'react-dom/server';
 
 function App() {
   const [isTerminalVisible, setTerminalVisible] = useState(true);
@@ -28,3 +29,5 @@ function App() {
 }
 
 export default App;
+
+ReactDOMServer.renderToString(<App/>);
